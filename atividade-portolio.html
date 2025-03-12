@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiza Marinho</title>
+    <link rel="icon" type="image/x-icon" href="./favicon-portfolio.ico">
+    <style>
+        
+        body{
+            margin: 0;
+        }
+        .imagem{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            filter: blur(2rem);
+            opacity: 0.7;
+            z-index: -1;
+        }
+        h1,h2{
+            color: #363636;
+        }
+        .img-luiza{
+            border-radius: 100%;
+            border: 0.4rem;
+            border-color: white;
+            width: 16rem;
+            height: auto;
+        }
+        .bg1{
+            display: flex;
+            justify-content: space-evenly; 
+            align-items: center;
+            padding-top: 230px;
+        }
+        .bg2, .bg3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .bg2{
+            line-height: 8px;
+        }
+        .paragrafo-descricao{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: end;
+            /* line-height: 10px; */
+            color: #363636;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <img class="imagem" src="https://i.imgur.com/TosBTe6.jpeg" alt="background">
+    <div class="bg1">
+        <div class="bg2">
+            <h1>Luiza Marinho</h1>
+            <h3 class="titulo2" >Desenvolvedora Front-end</h3> 
+            <!-- <a href="">Projetos</a>
+            <a href="">Contato</a> -->
+        </div>
+        <div class="bg3"> 
+             <img class="img-luiza" src="https://i.imgur.com/tek1nJm.jpeg" alt="imagem">   
+                <p class="paragrafo-descricao">Atuo há mais de 2 anos como desenvolvedora front end,<br>
+                React.js, React Router, Typescript, Tailwind,<br>
+                Graduação em Análise e Desenvolvimento de Sistemas.</p>
+        </div>
+        
+    </div>
+</body>
+</html>
