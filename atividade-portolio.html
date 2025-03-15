@@ -1,72 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luiza Marinho</title>
-    <link rel="icon" type="image/x-icon" href="./favicon-portfolio.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon-portfolio.ico" />
     <style>
-        
-        body{
-            margin: 0;
-        }
-        .imagem{
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            filter: blur(2rem);
-            opacity: 0.7;
-            z-index: -1;
-        }
-        h1,h2{
-            color: #363636;
-        }
-        .img-luiza{
-            border-radius: 100%;
-            border: 0.4rem;
-            border-color: white;
-            width: 16rem;
-            height: auto;
-        }
-        .bg1{
-            display: flex;
-            justify-content: space-evenly; 
-            align-items: center;
-            padding-top: 230px;
-        }
-        .bg2, .bg3{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .bg2{
-            line-height: 8px;
-        }
-        .paragrafo-descricao{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            text-align: end;
-            /* line-height: 10px; */
-            color: #363636;
-            margin-top: 2rem;
-        }
+      body,
+      html {
+        margin: 0;
+        height: 100%;
+        scroll-behavior: smooth;
+        font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue',
+          sans-serif;
+      }
+      .background {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        filter: blur(2rem);
+        opacity: 0.7;
+        z-index: -1;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #363636;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+      .img-luiza {
+        border-radius: 100%;
+        border: 0.4rem;
+        border-color: white;
+        width: 16rem;
+        height: auto;
+        margin-bottom: 5rem;
+      }
+      .bloco1 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 100%;
+      }
+      .bloco2,
+      .bloco3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .elementos-pg-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .paragrafo-descricao {
+        text-align: justify;
+        color: #363636;
+        max-width: 600px;
+      }
+      .pai-botoes {
+        display: flex;
+        gap: 2rem;
+      }
+      .botao-kahoto,
+      .botao-contato,
+      .botao-jogue-aqui {
+        text-decoration: none;
+        color: white;
+        background-color: #f97aa5;
+        padding: 20px;
+        border-radius: 2.5rem;
+      }
+      /* .botao-contato:hover,
+      .botao-kahoto:hover {
+        border: 2px solid white;
+      } */
+      .titulo-luiza {
+        margin-bottom: 0.5rem;
+        font-size: 3rem;
+      }
+      .subtitulo-luiza {
+        margin-bottom: 3rem;
+      }
+      .img-logo-kahoto {
+        width: 18rem;
+        height: auto;
+        margin-bottom: 4rem;
+      }
+      .img-inicial-kahoto,
+      .img-perguntas-kahoto {
+        width: 14rem;
+        height: auto;
+      }
+      .pai-imagens {
+        display: flex;
+        gap: 3.5rem;
+        margin-bottom: 3rem;
+      }
     </style>
-</head>
-<body>
-    <img class="imagem" src="https://i.imgur.com/TosBTe6.jpeg" alt="background">
-    <div class="bg1">
-        <div class="bg2">
-            <h1>Luiza Marinho</h1>
-            <h3 class="titulo2" >Desenvolvedora Front-end</h3> 
-            <!-- <a href="">Projetos</a>
-            <a href="">Contato</a> -->
+  </head>
+  <body>
+    <img
+      class="background"
+      src="https://i.imgur.com/TosBTe6.jpeg"
+      alt="background"
+    />
+    <div class="bloco1">
+      <div class="bloco2">
+        <img
+          class="img-luiza"
+          src="https://i.imgur.com/tek1nJm.jpeg"
+          alt="imagem"
+        />
+        <div class="pai-botoes">
+          <a href="#kahoto" class="botao-kahoto">Projetos</a>
+          <a href="#contato" class="botao-contato">Contato</a>
         </div>
-        <div class="bg3"> 
-             <img class="img-luiza" src="https://i.imgur.com/tek1nJm.jpeg" alt="imagem">   
-                <p class="paragrafo-descricao">Atuo há mais de 2 anos como desenvolvedora front end,<br>
-                React.js, React Router, Typescript, Tailwind,<br>
-                Graduação em Análise e Desenvolvimento de Sistemas.</p>
-        </div>
-        
+      </div>
+      <div class="bloco3">
+        <h1 class="titulo-luiza">Luiza Marinho</h1>
+        <h3 class="subtitulo-luiza">Desenvolvimento web</h3>
+        <p class="paragrafo-descricao">
+          Sou desenvolvedora Front End com dois anos de experiência,
+          especializada em interfaces modernas e responsivas, utilizando React,
+          Remix, Tailwind CSS e TypeScript. Atualmente, curso Análise e
+          Desenvolvimento de Sistemas e busco novos desafios para continuar
+          aprimorando minhas habilidades e contribuir para projetos inovadores.
+        </p>
+      </div>
     </div>
-</body>
+
+    <div class="bloco1" id="kahoto">
+      <div class="elementos-pg-2">
+        <img
+          class="img-logo-kahoto"
+          src="https://i.imgur.com/ARwT8lL.png"
+          alt="logo do jogo"
+        />
+        <a href="https://luizamarinho.github.io/kahoto/" target="_blank">
+          <div class="pai-imagens">
+            <img
+              class="img-inicial-kahoto"
+              src="https://i.imgur.com/weqZBAi.png"
+              alt="tela inicial kahoto"
+            />
+            <img
+              class="img-perguntas-kahoto"
+              src="https://i.imgur.com/cBsK8Zg.png"
+              alt="pagina de perguntas kahoto"
+            />
+          </div>
+        </a>
+        <a
+          href="https://luizamarinho.github.io/kahoto/"
+          target="_blank"
+          class="botao-jogue-aqui"
+          >Jogue aqui!</a
+        >
+      </div>
+    </div>
+    <div class="bloco1" id="contato">
+      <div class="bloco2">
+        <h1>Luiza Marinho</h1>
+        <h3 class="titulo2">Desenvolvedora Front-end</h3>
+      </div>
+      <div class="bloco3">
+        <img
+          class="img-luiza"
+          src="https://i.imgur.com/tek1nJm.jpeg"
+          alt="imagem"
+        />
+        <p class="paragrafo-descricao">
+          Olá! Sou desenvolvedora Front End há dois anos e tenho experiência no
+          desenvolvimento de interfaces modernas e responsivas. Ao longo da
+          minha jornada, trabalhei com tecnologias como React, Remix, Tailwind
+          CSS e TypeScript, que me permitem criar soluções dinâmicas e
+          eficientes. Atualmente, também estou cursando a graduação em Análise e
+          Desenvolvimento de Sistemas, o que me proporciona uma base sólida para
+          crescer cada vez mais na área de tecnologia. Estou sempre em busca de
+          novos desafios para aprimorar minhas habilidades e contribuir para
+          projetos inovadores.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
