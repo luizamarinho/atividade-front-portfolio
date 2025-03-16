@@ -69,23 +69,39 @@
         color: #363636;
         max-width: 600px;
       }
-      .pai-botoes {
+      .pai-botoes,
+      .pai-botoes2 {
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
+      }
+      .pai-botoes2 {
+        flex-direction: column;
       }
       .botao-kahoto,
       .botao-contato,
-      .botao-jogue-aqui {
+      .botoes-git-in {
         text-decoration: none;
         color: white;
         background-color: #f97aa5;
-        padding: 20px;
+        padding: 1.25rem;
         border-radius: 2.5rem;
+        box-shadow: 0px 0px 43px -18px rgba(55, 0, 66, 1);
       }
-      /* .botao-contato:hover,
-      .botao-kahoto:hover {
-        border: 2px solid white;
-      } */
+      .botao-contato,
+      .botao-kahoto,
+      .img-inicial-kahoto,
+      .img-perguntas-kahoto,
+      .botoes-git-in {
+        font-weight: 600;
+        transition: scale 0.3s ease-in-out;
+      }
+      .botoes-git-in {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.6rem;
+      }
       .titulo-luiza {
         margin-bottom: 0.5rem;
         font-size: 3rem;
@@ -108,6 +124,25 @@
         gap: 3.5rem;
         margin-bottom: 3rem;
       }
+      .img-git {
+        width: 2.25rem;
+        height: auto;
+      }
+      .texto-botoes {
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .botao-inicial {
+        text-decoration: none;
+        color: #26066b;
+      }
+      .botao-kahoto:hover,
+      .botao-contato:hover,
+      .img-inicial-kahoto:hover,
+      .img-perguntas-kahoto:hover,
+      .botoes-git-in:hover {
+        scale: 1.1;
+      }
     </style>
   </head>
   <body>
@@ -116,7 +151,7 @@
       src="https://i.imgur.com/TosBTe6.jpeg"
       alt="background"
     />
-    <div class="bloco1">
+    <div class="bloco1" id="inicial">
       <div class="bloco2">
         <img
           class="img-luiza"
@@ -162,36 +197,42 @@
             />
           </div>
         </a>
-        <a
-          href="https://luizamarinho.github.io/kahoto/"
-          target="_blank"
-          class="botao-jogue-aqui"
-          >Jogue aqui!</a
-        >
       </div>
     </div>
     <div class="bloco1" id="contato">
-      <div class="bloco2">
-        <h1>Luiza Marinho</h1>
-        <h3 class="titulo2">Desenvolvedora Front-end</h3>
-      </div>
       <div class="bloco3">
+        <h1 style="margin-bottom: 5rem">Entre em contato</h1>
         <img
           class="img-luiza"
           src="https://i.imgur.com/tek1nJm.jpeg"
           alt="imagem"
         />
-        <p class="paragrafo-descricao">
-          Olá! Sou desenvolvedora Front End há dois anos e tenho experiência no
-          desenvolvimento de interfaces modernas e responsivas. Ao longo da
-          minha jornada, trabalhei com tecnologias como React, Remix, Tailwind
-          CSS e TypeScript, que me permitem criar soluções dinâmicas e
-          eficientes. Atualmente, também estou cursando a graduação em Análise e
-          Desenvolvimento de Sistemas, o que me proporciona uma base sólida para
-          crescer cada vez mais na área de tecnologia. Estou sempre em busca de
-          novos desafios para aprimorar minhas habilidades e contribuir para
-          projetos inovadores.
-        </p>
+        <div class="pai-botoes2">
+          <a
+            href="https://github.com/luizamarinho"
+            target="_blank"
+            class="botoes-git-in"
+          >
+            <img
+              class="img-git"
+              src="https://i.imgur.com/4FuDkJJ.png"
+              alt="icone github"
+            />
+            <span class="texto-botoes">/luizamarinho</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/luizacmarinho/"
+            target="_blank"
+            class="botoes-git-in"
+          >
+            <img
+              class="img-git"
+              src="https://i.imgur.com/wY8iOPU.png"
+              alt="icone linkedin"
+            />
+            <span class="texto-botoes">/luizacmarinho</span>
+          </a>
+        </div>
       </div>
     </div>
   </body>
